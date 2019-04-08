@@ -262,7 +262,7 @@ public class Sudoku extends LatinSquare {
 		return true;
 	}
 
-	private void ShuffleRegion(int r) {
+	public void ShuffleRegion(int r) {
 
 		int[] region = getRegion(r);
 		shuffleArray(region);
@@ -299,7 +299,7 @@ public class Sudoku extends LatinSquare {
 		Collections.shuffle(Arrays.asList(arr));
 	}
 
-	private void SetRegion(int r) {
+	public void SetRegion(int r) {
 
 		int i = (r / iSqrtSize) * iSqrtSize;
 		int j = (r % iSqrtSize) * iSqrtSize;
@@ -314,7 +314,7 @@ public class Sudoku extends LatinSquare {
 		}
 	}
 
-	private void FillDiagonalRegions() {
+	public void FillDiagonalRegions() {
 
 		for (int diagRegions = 0; diagRegions < iSqrtSize; diagRegions += iSqrtSize + 1) {
 			SetRegion(diagRegions);

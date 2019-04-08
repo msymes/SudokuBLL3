@@ -259,7 +259,5 @@ public class SudokuTest {
 		
 	}
 	
-	private void PrintStars() {
-		
-	}
+	
 }

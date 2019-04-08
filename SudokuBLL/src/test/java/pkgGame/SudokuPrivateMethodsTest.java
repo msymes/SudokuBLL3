@@ -31,10 +31,6 @@ public class SudokuPrivateMethodsTest {
 		
 	}
 	
-	@Test
-	private void PrintStars() {
-		
-	}
 	
 	@Test
 	public void Sudoku_Test_SetRegion() {
@@ -52,5 +48,5 @@ public class SudokuPrivateMethodsTest {
 			e.printStackTrace();
 		}
 	}
-
+	
 }
